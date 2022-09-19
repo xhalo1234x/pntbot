@@ -4,7 +4,7 @@ import threading
 import time
 import random
 import string
-import aria
+import aria2p
 import telegram.ext as tg
 from dotenv import load_dotenv
 from pyrogram import Client
@@ -40,7 +40,7 @@ try:
 except KeyError:
     pass
 
-aria2 = aria2p.API(
+aria2p = aria2p.API(
     aria2p.Client(
         host="http://localhost",
         port=6800,
